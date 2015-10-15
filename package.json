@@ -1,6 +1,6 @@
 {
   "name": "graphlib-dot",
-  "version": "0.6.2-pre",
+  "version": "0.6.2",
   "description": "A DOT language parser / writer for graphlib",
   "author": "Chris Pettitt <cpettitt@gmail.com>",
   "main": "index.js",
@@ -10,7 +10,7 @@
     "parse"
   ],
   "dependencies": {
-    "graphlib": "^1.0.1",
+    "graphlib": "leMaik/graphlib#v1.0.5",
     "lodash": "^2.4.1"
   },
   "devDependencies": {
