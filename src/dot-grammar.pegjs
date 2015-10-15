@@ -5,7 +5,7 @@
 //  * HTML IDs
 
 {
-  var _ = require("./lodash");
+  var _ = require("lodash");
   var directed;
 }
 
@@ -43,7 +43,7 @@ inlineAttrStmt
       var attrs = {};
       attrs[k] = v;
       return { type: "inlineAttr", attrs: attrs };
-    } 
+    }
 
 nodeStmt
   = id:nodeId _* attrs:attrList? { return {type: "node", id: id, attrs: attrs || {}}; }
@@ -150,4 +150,3 @@ comment "comment"
 _
   = whitespace
   / comment
-
